@@ -1,15 +1,22 @@
 (function (){
-	var _images = document.getElementsByTagName('img');
+	var _images = document.getElementsByTagName("img");
 
 	for(var i = 0; i < _images.length; i++)
 	{		
+		var _img = _images[i];
 		try {
-			var _address = _images[i].getAttribute('src');
-			var _class = _images[i].getAttribute('class');
-			_class += " sfw";
-			_images[i].setAttribute('class',_class);
+			if(_img.classList===undefined){
+				_img.setAttribute('class','');
+			}
+			_img.classList.add("chrome-sfw");
+			_img.addEventListener("mouseenter", function() {	
+				_img.classList.remove("chrome-sfw");
+			}, false);
+			_img.addEventListener("mouseleave", function() {
+				_img.classList.add("chrome-sfw");
+			}, false);
 		} catch (e){
-			console.log(e)
+			console.log(e);
 		}
 	}
 })();
