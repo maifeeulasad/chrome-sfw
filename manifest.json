@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "chrome-sfw",
+	"description": "A Chrome extension to make your environment safer (as much as possible).",
+	"version": "0.0.0.1", 
+	"permissions" : [],
+	"content_scripts": [ {
+		"all_frames": true,
+		"js": [ "chrome_sfw.js" ,"/node_modules/nsfwjs/dist/index.js"],
+		"matches": [ "*://*/*" ],
+		"run_at": "document_end",
+		"css": ["chrome_sfw.css"]
+   } ]
+}
