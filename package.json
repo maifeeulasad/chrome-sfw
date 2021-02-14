@@ -1,0 +1,33 @@
+{
+  "name": "chrome-sfw",
+  "version": "0.0.1",
+  "description": "A Chrome extension to make your environment safer (as much as possible).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maifeeulasad/chrome-sfw.git"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "chrome-extension",
+    "sfw",
+    "nsfw",
+    "open",
+    "open-source",
+    "mua"
+  ],
+  "author": "Maifee Ul Asad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maifeeulasad/chrome-sfw/issues"
+  },
+  "homepage": "https://github.com/maifeeulasad/chrome-sfw#readme",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^3.0.0",
+    "nsfwjs": "^2.3.0"
+  }
+}
