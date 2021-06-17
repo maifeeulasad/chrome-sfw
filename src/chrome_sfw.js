@@ -1,4 +1,4 @@
-import * as nsfwjs from '/node_modules/nsfwjs/dist/index.js'
+import * as nsfwjs from '../node_modules/nsfwjs/dist/index.js'
 
 (function (){
 	var _images = document.getElementsByTagName("img");
