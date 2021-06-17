@@ -6,9 +6,9 @@
 	"permissions" : [],
 	"content_scripts": [ {
 		"all_frames": true,
-		"js": [ "chrome_sfw.js" ,"/node_modules/nsfwjs/dist/index.js"],
+		"js": [ "/src/chrome_sfw.js" ,"/node_modules/nsfwjs/dist/index.js"],
 		"matches": [ "*://*/*" ],
 		"run_at": "document_end",
-		"css": ["chrome_sfw.css"]
+		"css": ["/src/chrome_sfw.css"]
    } ]
 }
