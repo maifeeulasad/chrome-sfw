@@ -1,6 +1,8 @@
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import json from '@rollup/plugin-json';
+import babel from 'rollup-plugin-babel';
+import nodeResolve from 'rollup-plugin-node-resolve';
 
 import {
   chromeExtension,
@@ -18,6 +20,9 @@ export default {
     simpleReloader(),
     resolve(),
     commonjs(),
-    json()
+    json(),babel(),
+    nodeResolve({
+      jsnext: true
+    })
   ],
 }
